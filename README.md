@@ -48,7 +48,7 @@ python optimization_y/_cycle_model_CSS_Y.py
 
 Each model will simulate cyclic operation and report the key performance indicators (methane purity, CO₂ recovery, productivity).
 
-📂 Repository Structure
+## 📂 Repository Structure
 DFM-ICCU/
 │
 ├── simulation_x2/       # Full cyclic steady-state model (mass + energy + momentum)
@@ -67,7 +67,7 @@ DFM-ICCU/
 │
 └── README.md
 
-📖 Related Publication
+## 📖 Related Publication
 
 This repository accompanies the manuscript:
 “Multi-objective Optimisation of an Integrated CO₂ Capture and Methanation Process Using Dual-Function Materials”
@@ -75,11 +75,11 @@ by Meshkat Dolat, Andrew D. Wright, Melis S. Duyar, and Michael Short (2025).
 
 If you use this repository, please cite the above publication.
 
-📄 License
+## 📄 License
 
 This project is released under the MIT License, allowing free use and modification with attribution.
 
-🤝 Acknowledgements
+## 🤝 Acknowledgements
 
 The authors gratefully acknowledge support from the University of Surrey, the University of Manchester, and the Institute for Sustainability.
 This work was carried out as part of ongoing research in CO₂ capture, utilisation, and process optimisation using advanced catalytic materials.
