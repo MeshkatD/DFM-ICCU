@@ -42,3 +42,47 @@ pip install numpy scipy pandas matplotlib optuna
 ### 2. Run the full CSS simulation
 ```bash
 python simulation_x2/cycle_model_CSS_X2.py
+
+3. Run the reduced optimisation model
+```bash
+python optimization_y/_cycle_model_CSS_Y.py
+
+
+Each model will simulate cyclic operation and report the key performance indicators (methane purity, CO₂ recovery, and productivity).
+
+📂 Repository Structure
+```bash
+DFM-ICCU/
+│
+├── simulation_x2/       # Full cyclic steady-state model (mass + energy + momentum)
+│   ├── adsorption_model_X2.py
+│   ├── purge_model_X2.py
+│   ├── hydrogenation_model_X2.py
+│   ├── cycle_model_CSS_X2.py
+│   └── miscellaneous_X2.py
+│
+├── optimization_y/      # Reduced surrogate model for optimisation
+│   ├── adsorption_model_Y.py
+│   ├── purge_model_Y.py
+│   ├── hydrogenation_model_Y.py
+│   ├── _cycle_model_CSS_Y.py
+│   └── miscellaneous_Y.py
+│
+└── README.md
+
+📖 Related Publication
+
+This repository accompanies the manuscript:
+“Multi-objective Optimisation of an Integrated CO₂ Capture and Methanation Process Using Dual-Function Materials”
+by Meshkat Dolat, Andrew D. Wright, Melis S. Duyar, and Michael Short (2025).
+
+If you use this repository, please cite the above publication.
+
+📄 License
+
+This project is released under the MIT License, allowing free use and modification with attribution.
+
+🤝 Acknowledgements
+
+The authors gratefully acknowledge support from the University of Surrey, the University of Manchester, and the Institute for Sustainability.
+This work was carried out as part of ongoing research in CO₂ capture, utilisation, and process optimisation using advanced catalytic materials.
