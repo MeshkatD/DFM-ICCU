@@ -38,7 +38,7 @@ Two complementary model sets are provided:
 Create a virtual environment (optional) and install dependencies:
 ```bash
 pip install numpy scipy pandas matplotlib optuna
-
+```
 ### 2. Run the full CSS simulation
 ```bash
 python simulation_x2/cycle_model_CSS_X2.py
