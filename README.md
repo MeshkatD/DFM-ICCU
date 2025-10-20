@@ -1,7 +1,7 @@
 # DFM-ICCU: Open-Source Framework for Simulation and Optimisation of Dual-Function Material Processes
 
 **Authors:**  
-Meshkat Dolat¹, Andrew David Wright², Melis S. Duyar¹,³, Michael Short¹,³*  
+Meshkat Dolat¹, Andrew David Wright², Melis S. Duyar¹ ³, Michael Short¹,³*  
 
 ¹ School of Chemistry and Chemical Engineering, University of Surrey, UK  
 ² Department of Chemical Engineering, The University of Manchester, UK  
@@ -38,3 +38,7 @@ Two complementary model sets are provided:
 Create a virtual environment (optional) and install dependencies:
 ```bash
 pip install numpy scipy pandas matplotlib optuna
+
+### 2. Run the full CSS simulation
+```bash
+python simulation_x2/cycle_model_CSS_X2.py
