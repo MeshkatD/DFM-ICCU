@@ -42,11 +42,11 @@ pip install numpy scipy pandas matplotlib optuna
 ### 2. Run the full CSS simulation
 ```bash
 python simulation_x2/cycle_model_CSS_X2.py
-
+```
 3. Run the reduced optimisation model
 ```bash
 python optimization_y/_cycle_model_CSS_Y.py
-
+```
 
 Each model will simulate cyclic operation and report the key performance indicators (methane purity, CO₂ recovery, and productivity).
 
@@ -69,7 +69,7 @@ DFM-ICCU/
 │   └── miscellaneous_Y.py
 │
 └── README.md
-
+```
 📖 Related Publication
 
 This repository accompanies the manuscript:
