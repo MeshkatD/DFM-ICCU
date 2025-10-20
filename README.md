@@ -5,7 +5,9 @@ Meshkat Dolat¹, Andrew David Wright², Melis S. Duyar¹ ³, Michael Short¹,³*
 
 ¹ School of Chemistry and Chemical Engineering, University of Surrey, UK  
 ² Department of Chemical Engineering, The University of Manchester, UK  
-³ Institute for Sustainability, University of Surrey, UK  
+³ Institute for Sustainability, University of Surrey, UK
+
+* m.short@surrey.ac.uk
 
 ---
 
@@ -18,8 +20,8 @@ Two complementary model sets are provided:
 
 | Folder | Description |
 |:-------|:-------------|
-| **`simulation_x2/`** | Full 1D CSS reactor model including **mass**, **energy**, and **momentum** balances. Used to simulate the complete DFM cycle with detailed heat and pressure effects. |
-| **`optimization_y/`** | Reduced (surrogate) model for efficient **multi-objective optimisation**, derived from the full model but decoupled from the heat balance for computational speed. |
+| **`simulation_X/`** | Full 1D CSS reactor model including **mass**, **energy**, and **momentum** balances. Used to simulate the complete DFM cycle with detailed heat and pressure effects. |
+| **`optimisation_Y/`** | Reduced (surrogate) model for efficient **multi-objective optimisation**, derived from the full model but decoupled from the heat balance for computational speed. |
 
 ---
 
@@ -41,28 +43,28 @@ pip install numpy scipy pandas matplotlib optuna
 ```
 ### 2. Run the full CSS simulation
 ```bash
-python simulation_x2/cycle_model_CSS_X2.py
+python simulation_X/cycle_model_CSS_X.py
 ```
 ### 3. Run the reduced optimisation model
 ```bash
 python optimization_y/_cycle_model_CSS_Y.py
 ```
+Each model will simulate cyclic operation and report the key performance indicators (methane purity, CO₂ recovery, and productivity). 
 
-Each model will simulate cyclic operation and report the key performance indicators (methane purity, CO₂ recovery, and productivity).
 ---
 
 ### 📂 Repository Structure
 ```bash
 DFM-ICCU/
 │
-├── simulation_x2/       # Full cyclic steady-state model (mass + energy + momentum)
-│   ├── adsorption_model_X2.py
-│   ├── purge_model_X2.py
-│   ├── hydrogenation_model_X2.py
-│   ├── cycle_model_CSS_X2.py
-│   └── miscellaneous_X2.py
+├── simulation_X/       # Full cyclic steady-state model (mass + energy + momentum)
+│   ├── adsorption_model_X.py
+│   ├── purge_model_X.py
+│   ├── hydrogenation_model_X.py
+│   ├── cycle_model_CSS_X.py
+│   └── miscellaneous_X.py
 │
-├── optimization_y/      # Reduced surrogate model for optimisation
+├── optimisation_y/      # Reduced surrogate model for optimisation
 │   ├── adsorption_model_Y.py
 │   ├── purge_model_Y.py
 │   ├── hydrogenation_model_Y.py
